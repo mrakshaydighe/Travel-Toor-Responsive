@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Toor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <h1 class="logo">Adventure</h1>
+        <ul class="navlinks">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Explore</li>
+            <li class="btn"><a href="#" ></a>Contact</li>
+        </ul>
+        <img src="images/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header id="header">
+        <div class="header-content">
+            <h2>Explore The World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="" class="btn">Learn More</a>
+        </div>
+    </header>
+    
+    <script>
+        const menubbtn = document.querySelector(".menu-btn")
+        const navlinks = document.querySelector(".navlinks")
+
+        menubbtn.addEventListener("click",()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
