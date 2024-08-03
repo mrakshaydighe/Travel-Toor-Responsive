@@ -120,7 +120,7 @@ section{
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    margin-top: 50px;
+
 }
 
 .row .col {
@@ -131,6 +131,11 @@ section{
 .row .col img{
     width: 80%;
 }
+
+.section-one .row{
+    margin-top: 50px;
+}
+
 
 .col h4{
     font-size: 4vmin;
@@ -191,49 +196,55 @@ p{
     margin-bottom: 40px;
 }
 
-.tours .row .col{
-    width: 50%;
-}
-.tours .image-gallery{
+
+.tours .row {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.image-gallery img{
-    max-width: 250px;
-    height: auto;
-    margin: 10px;
-}
-
-.content-col{
+.tours .content-col {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.image-col{
+.tours .image-col {
     width: 60%;
 }
 
-.content-col h1{
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tours .image-gallery img {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+.content-col h1 {
     font-size: 7vmin;
     color: rgb(127, 90, 162);
-
 }
 
-.content-col .line{
-    margin-left: -1px;
+.content-col .line {
+    margin: 10px 0;
+}
+
+.content-col p {
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.content-col .btn {
+    margin: 20px 0;
 }
 
 
-.content-col p{
-    padding: 0;
-    margin: 30px auto;
-}
-
-.content-col .btn{
-    margin-left: -100px;
-}
 
 
 .footer{
